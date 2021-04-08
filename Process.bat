@@ -39,7 +39,7 @@ IF %stage_num%==8 (
 	goto return_value
 )
 IF %stage_num%==9 (
-	%matlabpath_2018b% -wait -log -nodesktop -nosplash -r "cd(getenv('funPath'));mf=getenv('mfilename'); mfile_name=strtrim(mf); ip=getenv('mname');model_file=strtrim(ip);ret=SIL_Testing(model_file,mfile_name);pause(5);exit"
+	%matlabpath_2018b% -wait -log -nodesktop -nosplash -r "cd(getenv('funPath'));mf=getenv('mfilename'); mfile_name=strtrim(mf); ip=getenv('mname');model_file=strtrim(ip);ret=SIL_Testing(model_file,mfile_name);pause(5);exit" 
 	goto return_value
 )
 IF %stage_num%==10 (
